@@ -57,7 +57,14 @@ a {
 .logo {
   font-size: 24px;
   color: #f3f7f6;
-  margin-left: 16px;
+}
+
+.logo img{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  height: auto;
+  filter: invert(100%); /* Inverte as cores da imagem para branco */
 }
 
 .menu-content {
@@ -276,9 +283,6 @@ a {
 }
 
 @media (min-width: 1300px) {
-  .logo {
-    margin-left: 0px;
-  }
 
   .menu {
     margin-right: 0px;
@@ -919,6 +923,9 @@ textarea {
 
 /* Rodapé */
 footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: #172129;
   color: #f3f7f6;
   text-align: center;
@@ -932,6 +939,12 @@ footer a {
 
 footer a:hover {
   color: #debe23;
+}
+
+footer img{
+  width: 15%;
+  height: auto;
+  filter: invert(100%); /* Inverte as cores da imagem para branco */
 }
 
 @media (max-width: 900px) {
@@ -951,6 +964,13 @@ footer a:hover {
   .baixar,
   #contrateMe a {
     width: 50%;
+  }
+  footer {
+    flex-direction: column;
+  }
+
+  footer img{
+    width: 20%;
   }
 }
 
@@ -975,6 +995,15 @@ footer a:hover {
 
   #mensagem-sucesso .conteudo {
     width: 80%;
+  }
+  footer img{
+    width: 25%;
+  }
+}
+
+@media (max-width: 500px){
+  footer img{
+    width: 30%;
   }
 }
 
