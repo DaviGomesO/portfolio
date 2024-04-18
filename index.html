@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev | Davi Gomes</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <!-- Importar o arquivo CSS externo -->
+    <!-- Importar biblioteca Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Merriweather&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="/js/script.js"></script>
+    <!-- Script para manipulação do menu -->
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="header">
+      <!-- Navbar fixo -->
+      <nav class="nav">
+        <a href="/" class="logo"><h3>DAVI GOMES</h3></a>
+
+        <button class="menu"></button>
+        <div class="menu-content">
+          <div class="menu-pags">
+            <ul class="nav-list">
+              <li><a href="#home" onclick="fecharMenu('#home')">INÍCIO</a></li>
+              <li><a href="#sobre" onclick="fecharMenu('#sobre')">SOBRE</a></li>
+              <li>
+                <a href="#servicos" onclick="fecharMenu('#servicos')"
+                  >SERVIÇOS</a
+                >
+              </li>
+              <li>
+                <a href="#experiencia" onclick="fecharMenu('#experiencia')"
+                  >EXPERIÊNCIA</a
+                >
+              </li>
+              <li>
+                <a href="#portfolio" onclick="fecharMenu('#portfolio')"
+                  >PORTFÓLIO</a
+                >
+              </li>
+              <li>
+                <a href="#contrateMe" onclick="fecharMenu('#contrateMe')"
+                  >CONTRATE-ME</a
+                >
+              </li>
+              <li>
+                <a href="#contato" onclick="fecharMenu('#contato')">CONTATO</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-redes">
+            <ul class="nav-redes">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/davi-gomess/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/DaviGomesO" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/davi.gomeso/" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Conteúdo -->
+    <div class="content">
+      <section id="home">
+        <div class="apresentacao">
+          <div class="mascara-img"></div>
+          <div class="typing-animation">
+            <h3>OLÁ! EU SOU O</h3>
+            <h1></h1>
+            <h4>
+              <span class="papeis">PROGRAMADOR<span>|</span></span>
+              <span class="papeis">DESENVOLVEDOR<span>|</span></span>
+              <span class="papeis">ANALISTA DE SISTEMA<span>|</span></span>
+              <span class="papeis">CIENTISTA DA COMPUTAÇÃO<span>|</span></span>
+              <span class="papeis">DESENVOLVEDOR FULLSTACK<span>|</span></span>
+              <span class="papeis"
+                >ESPECIALISTA EM AUTOMAÇÃO DE PROCESSOS<span>|</span></span
+              >
+              <span class="papeis">PESQUISADOR EM ALGORITMOS E OTIMIZAÇÃO</span>
+            </h4>
+          </div>
+        </div>
+      </section>
+      <!-- Seção Sobre -->
+      <section id="sobre">
+        <div>
+          <div class="cabecalho">
+            <p>
+              <strong>Sobre mim</strong>
+            </p>
+            <h1>Conheça-me mais</h1>
+          </div>
+          <div class="objetivo">
+            <h2>
+              Olá, sou
+              <u><span style="color: #172129">Davi Gomes</span></u>
+            </h2>
+
+            <p>
+              Sou desenvolvedor web fullstack e programador, atualmente cursando
+              Ciência da Computação. Tenho paixão por resolver problemas e
+              aprimorar serviços, desenvolvendo sistemas que proporcionem
+              soluções ideais, resultando em satisfação para o cliente e
+              eficiência para a empresa. Meu objetivo principal é fornecer
+              serviços com alta qualidade, eficiência e produtividade.
+            </p>
+          </div>
+          <div class="infoPessoais">
+            <div>
+              <p class="info">Nome:</p>
+              <p class="dadoInfo">Francisco Davi Gomes de Oliveira</p>
+            </div>
+            <div>
+              <p class="info">E-mail:</p>
+              <p class="dadoInfo">fdavigo.dev@gmail.com</p>
+            </div>
+            <div>
+              <p class="info">Data de nascimento:</p>
+              <p class="dadoInfo">30/01/2001</p>
+            </div>
+            <div>
+              <p class="info">De:</p>
+              <p class="dadoInfo">Morada Nova, Ceará, Brasil.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Serviços -->
+      <section id="servicos">
+        <div>
+          <div class="cabecalho">
+            <p><strong>O que eu faço</strong></p>
+            <h1>Como posso ajudar no seu próximo projeto</h1>
+          </div>
+          <div class="funcoes">
+            <div class="stack">
+              <!-- <i class="fas fa-code"></i> -->
+              <i class="fas fa-laptop-code"></i>
+              <h3>Desenvolvimento de aplicações</h3>
+              <p>
+                Desenvolvimento de soluções de software personalizadas para
+                atender às necessidades específicas do cliente ou do projeto.
+                Isso envolve escrever código em várias linguagens, como Python,
+                HTML, CSS, JavaScript, e implementar funcionalidades de acordo
+                com os requisitos do sistema.
+              </p>
+            </div>
+            <div class="stack">
+              <i class="fas fa-database"></i>
+              <h3>Integração de Banco de dados</h3>
+              <p>
+                Integração de sistemas de gerenciamento de banco de dados (DBMS)
+                para armazenar, recuperar e gerenciar dados de forma eficiente.
+                Isso inclui a criação de consultas SQL para manipular dados e
+                garantir a consistência e a integridade dos dados armazenados.
+              </p>
+            </div>
+            <div class="stack">
+              <i class="fas fa-wrench"></i>
+              <h3>Manutenção de códigos</h3>
+              <p>
+                Manutenção contínua de código-fonte para corrigir bugs,
+                implementar melhorias e atualizar funcionalidades conforme
+                necessário. Isso envolve revisar, depurar e refatorar o código
+                existente para garantir que ele permaneça funcional e eficiente
+                ao longo do tempo.
+              </p>
+            </div>
+            <div class="stack">
+              <i class="fas fa-cogs"></i>
+              <!-- <i class="fas fa-brain"></i> -->
+              <h3>Engenharia de Algoritmos</h3>
+              <p>
+                Desenvolvimento e otimização de algoritmos para resolver
+                problemas específicos de forma eficiente e escalável. Isso
+                inclui a pesquisa, projeto e implementação de algoritmos, bem
+                como a análise e otimização de seu desempenho.
+              </p>
+            </div>
+            <div class="stack">
+              <i class="fas fa-robot"></i>
+              <h3>Automações e tarefas repetitivas</h3>
+              <p>
+                Automatização de processos e tarefas repetitivas por meio do
+                desenvolvimento de scripts e ferramentas de automação. Isso
+                permite aumentar a eficiência operacional, reduzir erros humanos
+                e liberar tempo para atividades mais estratégicas.
+              </p>
+            </div>
+            <div class="stack">
+              <i class="fas fa-chart-line"></i>
+              <h3>Otimização de processos</h3>
+              <p>
+                Identificação de oportunidades de melhoria nos processos
+                existentes e desenvolvimento de soluções para otimizar esses
+                processos. Isso envolve análise detalhada de fluxos de trabalho,
+                identificação de gargalos e implementação de mudanças para
+                aumentar a eficiência e a produtividade.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Experiência -->
+      <section id="experiencia">
+        <div class="cabecalho">
+          <p><strong>Resumo</strong></p>
+          <h1>Minha trajetória profissional</h1>
+        </div>
+        <div class="exp">
+          <div class="educacao">
+            <h2>Minha educação</h2>
+            <div>
+              <h3>Formando em Ciência da Computação</h3>
+              <p class="instituicao">
+                Universidade Federal do Ceará | 2019-2024
+              </p>
+              <p class="resumo">
+                Durante minha trajetória acadêmica como bacharel, dediquei-me a
+                uma formação abrangente e sólida em ciência da computação na
+                faculdade. Ao longo do curso, explorei uma variedade de
+                disciplinas, desde fundamentos da programação até tópicos
+                avançados em algoritmos e estruturas de dados. Participei
+                ativamente de projetos práticos, trabalhos em equipe e
+                atividades extracurriculares, que enriqueceram minha experiência
+                educacional. Além disso, aproveitei oportunidades para aprimorar
+                minhas habilidades técnicas e pessoais, participando de eventos,
+                palestras e workshops relacionados à minha área de estudo. Essa
+                jornada acadêmica proporcionou uma base sólida para minha
+                carreira profissional e um ambiente enriquecedor para meu
+                crescimento pessoal e profissional.
+              </p>
+            </div>
+          </div>
+          <div class="minhaExperiencia">
+            <h2>Minha experiência</h2>
+            <div>
+              <h3>Programador (Estágio)</h3>
+              <p class="instituicao">Employ | Abril/2023 - Atual</p>
+              <p class="resumo">
+                Durante minha experiência como programador, concentrei-me
+                principalmente na linguagem Python, utilizando-a para uma
+                variedade de tarefas. Desenvolvi web scrapings e automações web
+                usando o Selenium, além de criar automações com o protocolo
+                SMTP. Também participei do desenvolvimento de uma aplicação web
+                utilizando o framework Flask, combinando Python e JavaScript, e
+                aplicando CSS e HTML para o frontend. Integrei o banco de dados
+                PostgreSQL à aplicação e adquiri conhecimento em implantá-la na
+                nuvem, incluindo a configuração de DNS para domínios. Essa
+                experiência ampliou meu domínio em diversas tecnologias e me
+                proporcionou habilidades valiosas em desenvolvimento web e
+                implantação de aplicativos.
+              </p>
+              <hr class="barra" />
+              <h3>Bolsista de Iniciação Científica</h3>
+              <p class="instituicao">
+                NEMO - Universidade Federal do Ceará | Setembro/2021 -
+                Setembro/2022
+              </p>
+              <p class="resumo">
+                Durante o período como bolsista, dediquei-me ao desenvolvimento
+                de um Algoritmo Genético em linguagem C, visando a otimização do
+                Problema do Corte Máximo. Além da implementação do algoritmo em
+                si, explorei técnicas de parametrização para determinar quais
+                configurações proporcionariam os melhores resultados. O projeto
+                culminou na elaboração de um artigo, intitulado "Parametrização
+                de um Algoritmo Genético para o Problema do Corte Máximo",
+                apresentado com sucesso na V ECOP (Encontro de Computação do
+                Oeste Potiguar). Essa experiência me proporcionou uma
+                compreensão mais profunda de algoritmos de otimização e a
+                oportunidade de contribuir para o avanço da pesquisa em
+                computação.
+              </p>
+              <hr class="barra" />
+              <h3>Monitoria voluntária</h3>
+              <p class="instituicao">
+                Universidade Federal do Ceará | Maio/2021 - Dezembro/2021
+              </p>
+              <p class="resumo">
+                Na minha experiência como monitor, desempenhei um papel crucial
+                no suporte aos alunos de duas turmas por semestre. Além de
+                fornecer assistência direta, ministrei aulas de revisão
+                destinadas a fortalecer e consolidar os conceitos abordados em
+                sala de aula. Para esse fim, desenvolvi questionários detalhados
+                que permitiam avaliar a compreensão dos alunos em relação ao
+                conteúdo apresentado pelo professor. Além disso, estive
+                disponível para responder dúvidas adicionais e oferecer suporte
+                através dos canais de comunicação estabelecidos. Essa
+                experiência não apenas me permitiu contribuir para o progresso
+                educacional dos alunos, mas também aprimorou minhas habilidades
+                de comunicação e didáticas.
+              </p>
+              <hr class="barraFinal" />
+            </div>
+          </div>
+          <div class="habilidades">
+            <h2>Minhas habilidades</h2>
+            <div class="habilidades-especifico">
+              <div>
+                <div class="skill">
+                  <p>Python</p>
+                  <p>85%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+                <div class="skill">
+                  <p>Linguagem C</p>
+                  <p>85%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+                <div class="skill">
+                  <p>JavaScript</p>
+                  <p>60%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 60%"></div>
+                </div>
+                <div class="skill">
+                  <p>HTML</p>
+                  <p>75%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 75%"></div>
+                </div>
+                <div class="skill">
+                  <p>CSS</p>
+                  <p>65%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 65%"></div>
+                </div>
+                <div class="skill">
+                  <p>TypeScript</p>
+                  <p>50%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 50%"></div>
+                </div>
+                <div class="skill">
+                  <p>Java</p>
+                  <p>40%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 40%"></div>
+                </div>
+                <div class="skill">
+                  <p>C#</p>
+                  <p>30%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 30%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="skill">
+                  <p>Flask</p>
+                  <p>90%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+                <div class="skill">
+                  <p>Selenium</p>
+                  <p>85%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+                <div class="skill">
+                  <p>PostgreSQL</p>
+                  <p>70%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+                <div class="skill">
+                  <p>Algoritmo Genético</p>
+                  <p>85%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+                <div class="skill">
+                  <p>Versionamento Git</p>
+                  <p>50%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 50%"></div>
+                </div>
+                <div class="skill">
+                  <p>Otimização de Algoritmos</p>
+                  <p>60%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 60%"></div>
+                </div>
+                <div class="skill">
+                  <p>Automações</p>
+                  <p>60%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 60%"></div>
+                </div>
+                <div class="skill">
+                  <p>Análise de Requisitos</p>
+                  <p>45%</p>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 45%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="/Curriculo - Francisco Davi Gomes de Oliveira.pdf"
+          class="baixar"
+          download
+          >DOWNLOAD CURRÍCULO</a
+        >
+      </section>
+
+      <!-- Portfólio -->
+      <section id="portfolio">
+        <div>
+          <div class="cabecalho">
+            <p><strong>Portfólio</strong></p>
+            <h1>Alguns dos meus projetos mais recentes</h1>
+          </div>
+          <div class="projetos"></div>
+          <div class="expandido">
+            <div class="conteudo-projeto dark">
+              <button
+                id="fechar-expandido"
+                class="menu"
+                onclick="fecharExpandido()"
+              ></button>
+              <h2 id="titulo-projeto"></h2>
+              <div class="informacoes">
+                <p>
+                  <strong>Descrição:</strong> <span id="info-projeto"></span>
+                </p>
+                <p><strong>Tipo:</strong> <span id="tipo-projeto"></span></p>
+                <p>
+                  <strong>Tecnologias:</strong>
+                  <span id="tecnologias-projeto"></span>
+                </p>
+                <p>
+                  <strong>URL:</strong
+                  ><a id="url-projeto" href="#" target="_blank"></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contrateMe">
+        <div>
+          <div class="cabecalho">
+            <h1>Interessados em meu trabalho?</h1>
+          </div>
+          <a href="#contato" onclick="fecharMenu('#contato')">Contate-me</a>
+        </div>
+      </section>
+      <!-- Contato -->
+      <section id="contato">
+        <div>
+          <div>
+            <h2>Entre em contato</h2>
+            <p>
+              Gosto de alinhar e levantar os requisitos necessários e desejados.
+              Por favor, compartilhe os detalhes do seu projeto ou interesse com
+              o máximo de detalhes para que nossa primeira reunião seja rica em
+              detalhes do projeto e o levantamento esteja de acordo para o
+              seguimento do serviço em caso de validação do mesmo.
+            </p>
+            <p><strong>Ligue-me</strong></p>
+            <p>+55 (88) 9 9984-2011</p>
+            <div class="menu-redes">
+              <ul class="nav-redes light">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/davi-gomess/"
+                    target="_blank"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/DaviGomesO" target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/davi.gomeso/"
+                    target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h2>Me informe mais sobre seu interesse</h2>
+            <form
+              id="formulario-contato"
+              method="POST"
+              action="https://formsubmit.co/fdavigo.dev@gmail.com"
+              onsubmit="exibirMensagemSucesso()"
+            >
+              <label for="nome">Nome completo:</label>
+              <input type="text" id="nome" name="name" required />
+
+              <label for="email">Endereço de e-mail:</label>
+              <input type="email" id="email" name="email" required />
+              <input type="hidden" name="_captcha" value="false" />
+
+              <label for="mensagem">Mensagem:</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="4"
+                required
+              ></textarea>
+              <input
+                type="hidden"
+                name="_next"
+                value="http://127.0.0.1:5500/?_next=mensagem-sucesso"
+              />
+              <button type="submit" onclick="exibirMensagemSucesso()">
+                Enviar
+              </button>
+            </form>
+          </div>
+          <div id="mensagem-sucesso">
+            <div class="conteudo">
+              <p>Sua mensagem foi enviada com sucesso!</p>
+              <button
+                id="fechar-mensagem"
+                class="menu"
+                onclick="fecharMensagem()"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Rodapé -->
+    <footer>
+      <p>
+        Copyright &copy; 2024, Todos os direitos reservados por
+        <a href="/">Davi Gomes</a>.
+      </p>
+    </footer>
+  </body>
+</html>

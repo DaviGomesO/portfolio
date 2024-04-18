@@ -1,0 +1,5 @@
+Background da página - #e9eeef (Porcelain)
+Titulos, Menu, Bloco projeto - #172129 (Mirage)
+Paragrafos - #706f87 (Storm gray)
+Destaque - #DEBE23 (Golden grass)
+Texto claro - #f3f7f6 (Aqua Haze)

@@ -1,0 +1,58 @@
+[
+  {
+    "titulo": "Parametrização de um Algoritmo Genetico para o problema do corte máximo",
+    "descricao": "O artigo é resultado de uma pesquisa para a bolsa PIBIC na qual fui contemplado em conjunto a Universidade Federal do Ceará. Nas pesquisas, desenvolvi um algoritmo genético (AG) para resolver o problema do corte máximo, afim de encontrar melhores parâmetros a serem utilizados no AG. Este artigo foi apresentado no V ECOP (Encontro de Computação do Oeste Potiguar).",
+    "tipo": "Artigo",
+    "tecnologia": "Linguagem C",
+    "url": "https://periodicos.ufersa.edu.br/ecop/article/view/11834"
+  },
+  {
+    "titulo": "Algoritmo genético para o problema do corte máximo",
+    "descricao": "Esse projeto é referente ao Algoritmo Genético(AG) para o problema do Corte máximo, o qual tem ações de mutação, crossover, busca local, dentre outras, e diversas técnicas aplicadas a esses conceitos, visando encontrar os melhores parâmetros a serem aplicados no AG.",
+    "tipo": "Algoritmo",
+    "tecnologia": "Linguagem C",
+    "url": "https://github.com/DaviGomesO/IC-Grafos"
+  },
+  {
+    "titulo": "Automação de inserção de créditos para cartão do RU",
+    "descricao": "Essa automação está programada para facilitar os passos para a inserção de créditos no cartão do Restaurante Universitário(RU). A automação abre o driver do Chrome, e em seguida a URL referente a página para busca do cartão, adiciona os dados referente ao nuúmero do cartão e a matricula, ao entrar vai digitar a quantidade de créditos a serem inseridos, depois escolhe a forma de pagamento pix, e por fim retorna, o código e a imagem do QR code referente ao pagamento.",
+    "tipo": "Automação",
+    "tecnologia": "Python, Selenium Python",
+    "url": "https://github.com/DaviGomesO/automacao_pagamento_RU-UFC"
+  },
+  {
+    "titulo": "Algoritmo Genético para Problema do Caixeiro Viajante",
+    "descricao": "Este projeto apresenta a implementação de um algoritmo genético para resolver o Problema do Caixeiro Viajante (TSP). A partir da leitura dos dados das cidades, o algoritmo calcula as distâncias entre elas e gera uma população inicial. Durante várias gerações, os indivíduos sofrem cruzamento e mutação para gerar novas soluções. O processo continua até que um critério de parada seja alcançado. Essa abordagem destaca a eficácia dos algoritmos genéticos na otimização de problemas de roteamento, oferecendo uma solução flexível e escalável para desafios complexos de logística e planejamento.",
+    "tipo": "Algoritmo",
+    "tecnologia": "Linguagem C.",
+    "url": "https://github.com/DaviGomesO/AG_Permutacao"
+  },
+  {
+    "titulo": "Website para Motel Desejo Proibido",
+    "descricao": "O projeto é fruto de uma parceria em conjunto com o Motel Desejo Proibido, onde o objetivo seria alcançar um site informativo com detalhes sobre seu estabelecimento, como localização, disponibilização de tabela de preços, e link direto para contato atráves do Whatsapp.",
+    "tipo": "Site",
+    "tecnologia": "Python, Flask, JavaScript, HTML, CSS",
+    "url": "https://moteldesejoproibido.onrender.com/"
+  },
+  {
+    "titulo": "Website - Sorteador de letras para Stop",
+    "descricao": "Esse projeto surgiu da ideia de fazer o sorteio da letra para a brincadeira Stop/Adedonha, onde a ideia principal é ter esse intermediador para facilitar o sorteio, e os usuários possam fazer a brincadeira no próprio papel. A aplicação conta com algumas funcionalidades além do sorteio da letra, podendo ter um histórico das letras já sorteadas naquela partida, e finalizar para zerar esse histórico.",
+    "tipo": "Site",
+    "tecnologia": "Python, Flask, JavaScript, HTML, CSS",
+    "url": "https://sorteadordeletras.up.railway.app/"
+  },
+  {
+    "titulo": "Website - Sorteador de números",
+    "descricao": "Esse projeto derivou da ideia do sorteador de letras. A finalidade deste site seria propriamente para o sorteio de números, onde o usuário pode definir o titulo do seu sorteio, e o número máximo a ser sorteado.",
+    "tipo": "Site",
+    "tecnologia": "Python, Flask, JavaScript, HTML, CSS",
+    "url": "https://moteldesejoproibido.onrender.com/"
+  },
+  {
+    "titulo": "Website - Teste de QI para Employ",
+    "descricao": "Este projeto abrange um site de teste de QI que avalia o desempenho do usuário por meio de perguntas selecionadas com base em uma lógica fundamentada no Índice de Massa Cerebral (PMI) aplicado a uma regra. Após o usuário inserir suas informações na página inicial, uma sessão é iniciada para rastrear sua interação. O teste consiste em responder a 10 perguntas dentro de um limite de tempo de 1 minuto e 30 segundos cada. Ao finalizar, o usuário é direcionado a uma página de agradecimento, com a opção de acessar a página da Employ no Linkedin. Os dados são registrados na tabela Resultados do banco de dados para análise futura.",
+    "tipo": "Site",
+    "tecnologia": "Python, Flask, JavaScript, HTML, CSS",
+    "url": ""
+  }
+]
