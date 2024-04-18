@@ -63,7 +63,7 @@ setTimeout(escreverProximaLetra, 500) // Tempo de espera inicial antes de começ
 
 const projetosContainer = document.querySelector('.projetos')
 
-fetch('/js/projetos.json')
+fetch('./js/projetos.json')
   .then(response => response.json())
   .then(data => {
     data.forEach((projeto, index) => {
@@ -82,7 +82,6 @@ fetch('/js/projetos.json')
 
       projetosContainer.appendChild(novoProjeto)
     })
-    
   })
   .catch(error =>
     console.error('Erro ao carregar os dados dos projetos:', error)
@@ -92,7 +91,7 @@ let urlOriginal = ''
 
 function expandirProjeto(index) {
   // faz uma requisição http no arquivo JSON
-  fetch('/js/projetos.json')
+  fetch('./js/projetos.json')
     .then(response => response.json())
     .then(data => {
       const projetos = data // Atribui os dados carregados do JSON à variável projetos

@@ -307,7 +307,7 @@ section {
 
 /* Corpo */
 .apresentacao {
-  background-image: url('/images/programador4.jpeg');
+  background-image: url('./images/programador4.jpeg');
   background-size: cover; /* faz a imagem cobrir toda a área disponível */
   background-position: center; /* centraliza a imagem */
   background-repeat: no-repeat; /* evita que a imagem se repita */
