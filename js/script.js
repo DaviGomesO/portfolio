@@ -135,7 +135,7 @@ function atualizarUrlProjeto() {
   const urlProjeto = document.getElementById('url-projeto')
   const larguraTela = window.innerWidth
 
-  if (larguraTela <= 440) {
+  if (larguraTela <= 440 && urlProjeto.textContent != 'Projeto Privado') {
     urlProjeto.textContent = 'Link'
   } else {
     urlProjeto.textContent = urlOriginal
