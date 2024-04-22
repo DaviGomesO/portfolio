@@ -674,7 +674,7 @@ section {
 }
 
 .projeto h2 {
-  text-align: justify;
+  /* text-align: justify; */
   overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse a altura máxima */
   display: -webkit-box; /* Exibe o conteúdo como um bloco flexível */
   -webkit-line-clamp: 2; /* Define o número máximo de linhas exibidas */
