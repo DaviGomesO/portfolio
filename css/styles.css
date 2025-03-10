@@ -693,6 +693,17 @@ section {
   text-overflow: ellipsis; /* Adiciona a elipse (...) para indicar que há mais texto oculto */
 }
 
+.projeto button {
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  display: block;
+  margin: 10px auto;
+  margin-top: 30px;
+}
+
 /* Estilos para o bloco expandido */
 .expandido {
   position: fixed;

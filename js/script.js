@@ -74,23 +74,11 @@ fetch('./js/projetos.json')
       const tituloProjeto = document.createElement('h2')
       tituloProjeto.textContent = projeto.titulo
 
-      // const infoProjeto = document.createElement('p')
-      // infoProjeto.textContent = projeto.descricao
-      // infoProjeto.style.display = 'none' // Oculta a descrição inicialmente
-
       const botaoVejaMais = document.createElement('button')
       botaoVejaMais.textContent = 'Veja mais'
-      botaoVejaMais.style.textDecoration = 'underline'
-      botaoVejaMais.style.background = 'none'
-      botaoVejaMais.style.border = 'none'
-      botaoVejaMais.style.cursor = 'pointer'
-      botaoVejaMais.style.color = 'white' // Define a cor do texto como branco
-      botaoVejaMais.style.display = 'block' // Para centralizar
-      botaoVejaMais.style.margin = '10px auto' // Centraliza horizontalmente
       botaoVejaMais.setAttribute('onclick', `expandirProjeto(${index})`)
 
       novoProjeto.appendChild(tituloProjeto)
-      // novoProjeto.appendChild(infoProjeto)
       novoProjeto.appendChild(botaoVejaMais)
 
       projetosContainer.appendChild(novoProjeto)
