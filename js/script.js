@@ -69,16 +69,26 @@ fetch('./js/projetos.json')
     data.forEach((projeto, index) => {
       const novoProjeto = document.createElement('div')
       novoProjeto.classList.add('projeto')
-      novoProjeto.setAttribute('onclick', `expandirProjeto(${index})`)
+      // novoProjeto.setAttribute('onclick', `expandirProjeto(${index})`)
 
       const tituloProjeto = document.createElement('h2')
       tituloProjeto.textContent = projeto.titulo
 
-      const infoProjeto = document.createElement('p')
-      infoProjeto.textContent = projeto.descricao
+      // const infoProjeto = document.createElement('p')
+      // infoProjeto.textContent = projeto.descricao
+      // infoProjeto.style.display = 'none' // Oculta a descrição inicialmente
+
+      const botaoVejaMais = document.createElement('button')
+      botaoVejaMais.textContent = 'Veja mais'
+      botaoVejaMais.style.textDecoration = 'underline'
+      botaoVejaMais.style.background = 'none'
+      botaoVejaMais.style.border = 'none'
+      botaoVejaMais.style.cursor = 'pointer'
+      botaoVejaMais.setAttribute('onclick', `expandirProjeto(${index})`)
 
       novoProjeto.appendChild(tituloProjeto)
-      novoProjeto.appendChild(infoProjeto)
+      // novoProjeto.appendChild(infoProjeto)
+      novoProjeto.appendChild(botaoVejaMais)
 
       projetosContainer.appendChild(novoProjeto)
     })
