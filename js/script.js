@@ -84,6 +84,9 @@ fetch('./js/projetos.json')
       botaoVejaMais.style.background = 'none'
       botaoVejaMais.style.border = 'none'
       botaoVejaMais.style.cursor = 'pointer'
+      botaoVejaMais.style.color = 'white' // Define a cor do texto como branco
+      botaoVejaMais.style.display = 'block' // Para centralizar
+      botaoVejaMais.style.margin = '10px auto' // Centraliza horizontalmente
       botaoVejaMais.setAttribute('onclick', `expandirProjeto(${index})`)
 
       novoProjeto.appendChild(tituloProjeto)
